@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1490AE1A2BBD729300E30797 /* ReadingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1490AE192BBD729300E30797 /* ReadingListView.swift */; };
+		1490AE1C2BBD8D5200E30797 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1490AE1B2BBD8D5200E30797 /* EmptyView.swift */; };
+		1490AE1E2BBD96A100E30797 /* ReadingListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1490AE1D2BBD96A000E30797 /* ReadingListItemView.swift */; };
+		1490AE202BBD993500E30797 /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1490AE1F2BBD993500E30797 /* Colours.swift */; };
 		14E909252BB0787000BD13B5 /* iBloodPressureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E909242BB0787000BD13B5 /* iBloodPressureApp.swift */; };
 		14E909272BB0787000BD13B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E909262BB0787000BD13B5 /* ContentView.swift */; };
 		14E909292BB0787200BD13B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E909282BB0787200BD13B5 /* Assets.xcassets */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1490AE192BBD729300E30797 /* ReadingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListView.swift; sourceTree = "<group>"; };
+		1490AE1B2BBD8D5200E30797 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		1490AE1D2BBD96A000E30797 /* ReadingListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListItemView.swift; sourceTree = "<group>"; };
+		1490AE1F2BBD993500E30797 /* Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
 		14E909212BB0787000BD13B5 /* iBloodPressure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBloodPressure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E909242BB0787000BD13B5 /* iBloodPressureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBloodPressureApp.swift; sourceTree = "<group>"; };
 		14E909262BB0787000BD13B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +72,10 @@
 				14E909322BB0788300BD13B5 /* Reading.swift */,
 				14E909342BB0798F00BD13B5 /* AddReadingView.swift */,
 				14E909362BB079AF00BD13B5 /* AddReadingViewViewModel.swift */,
+				1490AE192BBD729300E30797 /* ReadingListView.swift */,
+				1490AE1B2BBD8D5200E30797 /* EmptyView.swift */,
+				1490AE1D2BBD96A000E30797 /* ReadingListItemView.swift */,
+				1490AE1F2BBD993500E30797 /* Colours.swift */,
 			);
 			path = iBloodPressure;
 			sourceTree = "<group>";
@@ -150,7 +162,11 @@
 				14E909352BB0798F00BD13B5 /* AddReadingView.swift in Sources */,
 				14E909372BB079AF00BD13B5 /* AddReadingViewViewModel.swift in Sources */,
 				14E909252BB0787000BD13B5 /* iBloodPressureApp.swift in Sources */,
+				1490AE1E2BBD96A100E30797 /* ReadingListItemView.swift in Sources */,
 				14E909332BB0788300BD13B5 /* Reading.swift in Sources */,
+				1490AE1C2BBD8D5200E30797 /* EmptyView.swift in Sources */,
+				1490AE202BBD993500E30797 /* Colours.swift in Sources */,
+				1490AE1A2BBD729300E30797 /* ReadingListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +300,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iBloodPressure/Preview Content\"";
+				DEVELOPMENT_TEAM = F4Y4J7N38V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -291,6 +308,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +330,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iBloodPressure/Preview Content\"";
+				DEVELOPMENT_TEAM = F4Y4J7N38V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -319,6 +338,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
