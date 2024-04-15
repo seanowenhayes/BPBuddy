@@ -8,21 +8,9 @@ struct AddReadingView: View {
         VStack {
             Form {
                 Section("Readings") {
-                    Picker("Systolic", selection: $model.systolic) {
-                        ForEach(70 ... 170, id: \.self) { value in
-                            Text(String(value))
-                        }
-                    }
-                    Picker("Diastolic", selection: $model.diastolic) {
-                        ForEach(40 ... 100, id: \.self) { value in
-                            Text(String(value))
-                        }
-                    }
-                    Picker("Pulse", selection: $model.pulse) {
-                        ForEach(20 ... 220, id: \.self) { value in
-                            Text(String(value))
-                        }
-                    }
+                    Stepper("Systolic: \(model.systolic)", value: $model.systolic, in: 70 ... 170)
+                    Stepper("Diastolic: \(model.diastolic)", value: $model.diastolic, in: 40 ... 100)
+                    Stepper("Pulse: \(model.pulse)", value: $model.pulse, in: 20 ... 200)
                 }
                 Section("Record reading") {
                     Button("Add", systemImage: "plus.circle") {
@@ -39,7 +27,6 @@ struct AddReadingView: View {
         }
     }
 
-    // systolic: 105, diastolic: 70, pulse: 80
     init(modelContext: ModelContext) {
         let model = ViewModel(systolic: 105, diastolic: 70, pulse: 80, modelContext: modelContext)
         _model = State(initialValue: model)
