@@ -21,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		145639802BCD048A0085AE4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1490AE192BBD729300E30797 /* ReadingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListView.swift; sourceTree = "<group>"; };
 		1490AE1B2BBD8D5200E30797 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		1490AE1D2BBD96A000E30797 /* ReadingListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListItemView.swift; sourceTree = "<group>"; };
@@ -76,6 +77,7 @@
 				1490AE1B2BBD8D5200E30797 /* EmptyView.swift */,
 				1490AE1D2BBD96A000E30797 /* ReadingListItemView.swift */,
 				1490AE1F2BBD993500E30797 /* Colours.swift */,
+				145639802BCD048A0085AE4A /* README.md */,
 			);
 			path = iBloodPressure;
 			sourceTree = "<group>";

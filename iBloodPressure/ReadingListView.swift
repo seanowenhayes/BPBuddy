@@ -4,7 +4,7 @@ import SwiftUI
 struct ReadingListView: View {
     @Environment(\.modelContext) var modelContext
 
-    @Query var readings: [Reading]
+    @Query(sort: \Reading.time, order: .reverse) var readings: [Reading]
     var body: some View {
         VStack {
             if readings.isEmpty == false {
