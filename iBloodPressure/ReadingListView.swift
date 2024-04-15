@@ -9,6 +9,24 @@ struct ReadingListView: View {
         VStack {
             if readings.isEmpty == false {
                 List {
+                    HStack {
+                        Text("Date")
+                            .frame(maxWidth: .infinity)
+                            .foregroundColor(.secondary)
+                            .font(.headline)
+                        Text("Systolic")
+                            .frame(maxWidth: .infinity)
+                            .foregroundColor(.systolic)
+                            .font(.headline)
+                        Text("Diastolic")
+                            .frame(maxWidth: .infinity)
+                            .foregroundColor(.diastolic)
+                            .font(.headline)
+                        Text("Pulse")
+                            .frame(maxWidth: .infinity)
+                            .foregroundColor(.pulse)
+                            .font(.headline)
+                    }
                     ForEach(readings) { reading in
                         ReadingListItemView(reading: reading)
                             .swipeActions(edge: .leading) {
@@ -18,7 +36,6 @@ struct ReadingListView: View {
                     }.onDelete(perform: deleteRecords)
 
                 }.scrollBounceBehavior(.basedOnSize)
-
             } else {
                 EmptyView()
             }
@@ -41,11 +58,14 @@ struct ReadingListView: View {
         let modelContainer = try ModelContainer(for: Reading.self, configurations: config)
         let modelContext = modelContainer.mainContext
 
-        Array(repeating: Reading.example, count: 10).forEach {
-            print($0)
-            modelContext.insert($0)
+        for i in 0...10 {
+            var example = Reading.example
+            example.diastolic += i
+            example.pulse += i
+            example.systolic += i
+            modelContext.insert(example)
+            
         }
-
         return ReadingListView()
             .modelContext(modelContext)
             .environment(contentModel)

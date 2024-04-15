@@ -8,6 +8,9 @@ struct ReadingListItemView: View {
     
     var body: some View {
         HStack {
+            Text(reading.timeFormatted)
+                .frame(maxWidth: .infinity)
+                .foregroundColor(.secondary)
             Text("\(reading.systolic)")
                 .frame(maxWidth: .infinity)
                 .foregroundColor(.systolic)
@@ -18,8 +21,8 @@ struct ReadingListItemView: View {
                 .frame(maxWidth: .infinity)
                 .foregroundColor(.pulse)
         }
-        .background(.gray.gradient)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        
     }
     
     init(reading: Reading) {
