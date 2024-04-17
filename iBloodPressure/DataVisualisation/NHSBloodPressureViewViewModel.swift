@@ -1,6 +1,6 @@
 import Foundation
 
-extension NHSBloodPressureView {
+extension ReadingIndicatorView {
     
     @Observable
     class ViewModel {
