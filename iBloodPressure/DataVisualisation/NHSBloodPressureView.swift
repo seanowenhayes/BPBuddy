@@ -25,17 +25,17 @@ struct NHSBloodPressureView: View {
 }
 
 #Preview("Example reading") {
-    ReadingIndicatorView(reading: Reading.example)
+    NHSBloodPressureView(reading: Reading.example)
 }
 
 #Preview("Very low") {
-    ReadingIndicatorView(
+    NHSBloodPressureView(
         reading: Reading(time: Date.now, systolic: 0, diastolic: 0, pulse: 0)
     )
 }
 
 #Preview("Very high") {
-    ReadingIndicatorView(
+    NHSBloodPressureView(
         reading: Reading(
             time: Date.now, systolic: 9999, diastolic: 9999, pulse: 99999
         )
@@ -43,7 +43,7 @@ struct NHSBloodPressureView: View {
 }
 
 #Preview("Min OK reading") {
-    ReadingIndicatorView(
+    NHSBloodPressureView(
         reading: Reading(
             time: Date.now, systolic: 90, diastolic: 60, pulse: 99999
         )
@@ -51,7 +51,7 @@ struct NHSBloodPressureView: View {
 }
 
 #Preview("Max OK reading") {
-    ReadingIndicatorView(
+    NHSBloodPressureView(
         reading: Reading(
             time: Date.now, systolic: 120, diastolic: 80, pulse: 99999
         )
@@ -59,7 +59,7 @@ struct NHSBloodPressureView: View {
 }
 
 #Preview("Max slightly raised reading") {
-    ReadingIndicatorView(
+    NHSBloodPressureView(
         reading: Reading(
             time: Date.now, systolic: 135, diastolic: 85, pulse: 99999
         )
