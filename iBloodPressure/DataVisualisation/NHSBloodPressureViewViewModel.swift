@@ -1,11 +1,19 @@
 import Foundation
 
 extension NHSBloodPressureView {
+    
+    @Observable
     class ViewModel {
         let reading: Reading
         
         init(reading: Reading) {
             self.reading = reading
+        }
+        
+        private(set) var isAnimating = false
+        
+        func startAnimation() {
+            isAnimating = true
         }
         
         func readingPosition() -> CGPoint {
