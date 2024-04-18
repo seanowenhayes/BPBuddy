@@ -15,6 +15,7 @@
 		1456399C2BD011C10085AE4A /* ReadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1456399B2BD011C10085AE4A /* ReadingIndicatorView.swift */; };
 		1456399E2BD022570085AE4A /* DiastolicAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1456399D2BD022560085AE4A /* DiastolicAxisView.swift */; };
 		145639A02BD023D40085AE4A /* AxisText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1456399F2BD023D40085AE4A /* AxisText.swift */; };
+		145639A42BD185760085AE4A /* ReadingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145639A32BD185760085AE4A /* ReadingTest.swift */; };
 		1490AE1A2BBD729300E30797 /* ReadingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1490AE192BBD729300E30797 /* ReadingListView.swift */; };
 		1490AE1C2BBD8D5200E30797 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1490AE1B2BBD8D5200E30797 /* EmptyView.swift */; };
 		1490AE1E2BBD96A100E30797 /* ReadingListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1490AE1D2BBD96A000E30797 /* ReadingListItemView.swift */; };
@@ -49,6 +50,7 @@
 		1456399B2BD011C10085AE4A /* ReadingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingIndicatorView.swift; sourceTree = "<group>"; };
 		1456399D2BD022560085AE4A /* DiastolicAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiastolicAxisView.swift; sourceTree = "<group>"; };
 		1456399F2BD023D40085AE4A /* AxisText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisText.swift; sourceTree = "<group>"; };
+		145639A32BD185760085AE4A /* ReadingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingTest.swift; sourceTree = "<group>"; };
 		1490AE192BBD729300E30797 /* ReadingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListView.swift; sourceTree = "<group>"; };
 		1490AE1B2BBD8D5200E30797 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		1490AE1D2BBD96A000E30797 /* ReadingListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListItemView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				145639932BCD50120085AE4A /* DataVisualisation */,
+				145639A32BD185760085AE4A /* ReadingTest.swift */,
 			);
 			path = iBloodPressureTests;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				145639A42BD185760085AE4A /* ReadingTest.swift in Sources */,
 				145639952BCD503F0085AE4A /* ReadingIndicatorViewViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
