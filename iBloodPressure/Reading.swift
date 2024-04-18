@@ -6,17 +6,17 @@ class Reading {
     // when the reading was taken
     let time: Date
     // the high number
-    var systolic: Int
+    var systolic: UInt
     // the low number
-    var diastolic: Int
+    var diastolic: UInt
 
-    var pulse: Int
+    var pulse: UInt
     
     var timeFormatted: String {
         time.formatted(.dateTime.day(.twoDigits).month(.twoDigits).year(.twoDigits))
     }
 
-    init(time: Date, systolic: Int, diastolic: Int, pulse: Int) {
+    init(time: Date, systolic: UInt, diastolic: UInt, pulse: UInt) {
         self.time = time
         self.systolic = systolic
         self.diastolic = diastolic

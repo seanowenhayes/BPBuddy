@@ -4,9 +4,9 @@ import SwiftData
 extension AddReadingView {
     @Observable
     class ViewModel {
-        var  systolic: Int
-        var diastolic: Int
-        var pulse: Int
+        var  systolic: UInt
+        var diastolic: UInt
+        var pulse: UInt
         var modelContext: ModelContext
         var reading: Reading {
             Reading(
@@ -28,7 +28,7 @@ extension AddReadingView {
             )
         }
         
-        init(systolic: Int, diastolic: Int, pulse: Int, modelContext: ModelContext) {
+        init(systolic: UInt, diastolic: UInt, pulse: UInt, modelContext: ModelContext) {
             self.systolic = systolic
             self.diastolic = diastolic
             self.pulse = pulse

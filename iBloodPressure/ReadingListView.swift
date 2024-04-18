@@ -60,9 +60,9 @@ struct ReadingListView: View {
 
         for i in 0...10 {
             var example = Reading.example
-            example.diastolic += i
-            example.pulse += i
-            example.systolic += i
+            example.diastolic += UInt(i)
+            example.pulse += UInt(i)
+            example.systolic += UInt(i)
             modelContext.insert(example)
             
         }
