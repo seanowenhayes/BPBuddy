@@ -7,6 +7,9 @@ struct AddReadingView: View {
     var body: some View {
         VStack {
             Form {
+                Section {
+                    NHSBloodPressureView(reading: model.reading)
+                }
                 Section("Readings") {
                     Stepper("Systolic: \(model.systolic)", value: $model.systolic, in: 70 ... 170)
                     Stepper("Diastolic: \(model.diastolic)", value: $model.diastolic, in: 40 ... 100)
@@ -20,10 +23,6 @@ struct AddReadingView: View {
                     .frame(maxWidth: .infinity)
                 }
             }.scrollBounceBehavior(.basedOnSize)
-            Image(.bloodPressureReading)
-                .resizable()
-                .scaledToFill()
-                .ignoresSafeArea(.all)
         }
     }
 

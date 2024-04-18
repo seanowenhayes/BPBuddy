@@ -8,6 +8,14 @@ extension AddReadingView {
         var diastolic: Int
         var pulse: Int
         var modelContext: ModelContext
+        var reading: Reading {
+            Reading(
+                time: Date.now,
+                systolic: systolic,
+                diastolic: diastolic,
+                pulse: pulse
+            )
+        }
         
         func save() {
             modelContext.insert(

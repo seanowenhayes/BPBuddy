@@ -3,24 +3,30 @@ import SwiftUI
 /// Displays a blood pressure record using a chart based on the current NHS (Health serice in the U.K.) app.
 ///
 struct NHSBloodPressureView: View {
-    private let systolicYMarkings = [70.0, 90.0, 120.0, 135.0, 170.0]
     let reading: Reading
 
     var body: some View {
-        HStack {
-            Text("Systolic")
-                .frame(maxHeight: .infinity)
-                .rotationEffect(.degrees(270))
+        VStack {
+            AxisText("Systolic")
                 .foregroundColor(.secondary)
+                .frame(width: 240, alignment: .leading)
+                .offset(x: -35)
             ZStack(alignment: .bottomLeading) {
                 BackgroundView()
                 SystolicAxisView()
+                DiastolicAxisView()
                 ReadingIndicatorView(reading: reading)
             }
             .frame(width: 240, height: 200)
             .border(.black)
-            .padding()
+            AxisText("diastolic")
+                .foregroundColor(.secondary)
+                .offset(y: 10)
         }
+        .padding(.leading, 40)
+        .padding(.trailing, 20)
+        .padding(.top, 3)
+        .padding(.bottom, 10)
     }
 }
 
