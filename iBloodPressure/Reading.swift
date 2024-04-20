@@ -11,16 +11,22 @@ class Reading {
     var diastolic: UInt
 
     var pulse: UInt
-    
+
     var timeFormatted: String {
         time.formatted(.dateTime.day(.twoDigits).month(.twoDigits).year(.twoDigits))
     }
-    
+
     var healthStatus: String {
-        if systolic <= 90 && diastolic <= 60 {
-            return "low"
+        if systolic > 135 || diastolic > 85 {
+            return "high"
         }
-        return "healthy"
+        if systolic > 120 || diastolic > 80 {
+            return "raised"
+        }
+        if systolic > 90 || diastolic > 60 {
+            return "healthy"
+        }
+        return "low"
     }
 
     init(time: Date, systolic: UInt, diastolic: UInt, pulse: UInt) {
