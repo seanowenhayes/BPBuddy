@@ -13,7 +13,6 @@ struct AddReadingView: View {
                 Section("Readings") {
                     Stepper("Systolic: \(model.systolic)", value: $model.systolic, in: 70 ... 170)
                     Stepper("Diastolic: \(model.diastolic)", value: $model.diastolic, in: 40 ... 100)
-                    Stepper("Pulse: \(model.pulse)", value: $model.pulse, in: 20 ... 200)
                 }
                 Section("Record reading") {
                     Button("Add", systemImage: "plus.circle") {

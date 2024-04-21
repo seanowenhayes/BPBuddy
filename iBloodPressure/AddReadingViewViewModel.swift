@@ -12,8 +12,7 @@ extension AddReadingView {
             Reading(
                 time: Date.now,
                 systolic: systolic,
-                diastolic: diastolic,
-                pulse: pulse
+                diastolic: diastolic
             )
         }
         
@@ -22,8 +21,7 @@ extension AddReadingView {
                 Reading(
                     time: Date.now,
                     systolic: systolic,
-                    diastolic: diastolic,
-                    pulse: pulse
+                    diastolic: diastolic
                 )
             )
         }

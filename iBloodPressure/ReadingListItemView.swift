@@ -17,9 +17,6 @@ struct ReadingListItemView: View {
             Text("\(reading.diastolic)")
                 .frame(maxWidth: .infinity)
                 .foregroundColor(.diastolic)
-            Text("\(reading.pulse)")
-                .frame(maxWidth: .infinity)
-                .foregroundColor(.pulse)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         
