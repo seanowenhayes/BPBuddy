@@ -13,19 +13,19 @@ struct ReadingListView: View {
                         Text("Date")
                             .frame(maxWidth: .infinity)
                             .foregroundColor(.secondary)
-                            .font(.headline)
+                            .font(.caption)
                         Text("Systolic")
                             .frame(maxWidth: .infinity)
-                            .foregroundColor(.systolic)
-                            .font(.headline)
+                            .foregroundColor(.secondary)
+                            .font(.caption)
                         Text("Diastolic")
                             .frame(maxWidth: .infinity)
-                            .foregroundColor(.diastolic)
-                            .font(.headline)
-                        Text("Pulse")
+                            .foregroundColor(.secondary)
+                            .font(.caption)
+                        Text("Status")
                             .frame(maxWidth: .infinity)
-                            .foregroundColor(.pulse)
-                            .font(.headline)
+                            .foregroundColor(.secondary)
+                            .font(.caption)
                     }
                     ForEach(readings) { reading in
                         ReadingListItemView(reading: reading)
@@ -58,12 +58,11 @@ struct ReadingListView: View {
         let modelContainer = try ModelContainer(for: Reading.self, configurations: config)
         let modelContext = modelContainer.mainContext
 
-        for i in 0...10 {
+        for i in 0 ... 10 {
             var example = Reading.example
             example.diastolic += UInt(i)
             example.systolic += UInt(i)
             modelContext.insert(example)
-            
         }
         return ReadingListView()
             .modelContext(modelContext)

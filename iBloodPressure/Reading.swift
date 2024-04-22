@@ -4,6 +4,13 @@ import SwiftData
 @Model
 class Reading {
     
+    enum HealthStatus {
+        case low
+        case healthy
+        case raised
+        case high
+    }
+    
     // When the reading was taken
     let time: Date
     // The high number
@@ -12,20 +19,20 @@ class Reading {
     var diastolic: UInt
 
     var timeFormatted: String {
-        time.formatted(.dateTime.day(.twoDigits).month(.twoDigits).year(.twoDigits))
+        time.formatted(.dateTime.day(.twoDigits).month(.twoDigits))
     }
 
-    var healthStatus: String {
+    var healthStatus: HealthStatus {
         if systolic > 135 || diastolic > 85 {
-            return "high"
+            return .high
         }
         if systolic > 120 || diastolic > 80 {
-            return "raised"
+            return .raised
         }
         if systolic > 90 || diastolic > 60 {
-            return "healthy"
+            return .healthy
         }
-        return "low"
+        return .low
     }
 
     init(time: Date, systolic: UInt, diastolic: UInt) {
