@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             ReadingListView()
-                .navigationTitle("Blood pressure history")
+                .navigationTitle("Blood Pressure History")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     Button("Add", systemImage: "plus") {

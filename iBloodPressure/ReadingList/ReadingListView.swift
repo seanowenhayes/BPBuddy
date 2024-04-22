@@ -9,23 +9,22 @@ struct ReadingListView: View {
         VStack {
             if readings.isEmpty == false {
                 List {
-                    HStack {
-                        Text("Date")
-                            .frame(maxWidth: .infinity)
-                            .foregroundColor(.secondary)
-                            .font(.caption)
-                        Text("Systolic")
-                            .frame(maxWidth: .infinity)
-                            .foregroundColor(.secondary)
-                            .font(.caption)
-                        Text("Diastolic")
-                            .frame(maxWidth: .infinity)
-                            .foregroundColor(.secondary)
-                            .font(.caption)
-                        Text("Status")
-                            .frame(maxWidth: .infinity)
-                            .foregroundColor(.secondary)
-                            .font(.caption)
+                    GeometryReader { geometry in
+                        let aQuarterWidth = geometry.size.width / 4
+                        HStack {
+                            Text("Date")
+                                .frame(width: aQuarterWidth)
+                                .fontWeight(.bold)
+                            Text("Systolic")
+                                .frame(width: aQuarterWidth)
+                                .fontWeight(.bold)
+                            Text("Diastolic")
+                                .frame(width: aQuarterWidth)
+                                .fontWeight(.bold)
+                            Text("Status")
+                                .frame(width: aQuarterWidth)
+                                .fontWeight(.bold)
+                        }
                     }
                     ForEach(readings) { reading in
                         ReadingListItemView(reading: reading)
