@@ -15,10 +15,16 @@ struct ReadingListView: View {
                             Text("Date")
                                 .frame(width: aQuarterWidth)
                                 .fontWeight(.bold)
-                            Text("Systolic")
+                            ViewThatFits {
+                                Text("Systolic")
+                                Text("Sys")
+                            }
                                 .frame(width: aQuarterWidth)
                                 .fontWeight(.bold)
-                            Text("Diastolic")
+                            ViewThatFits {
+                                Text("Diastolic")
+                                Text("Dia")
+                            }
                                 .frame(width: aQuarterWidth)
                                 .fontWeight(.bold)
                             Text("Status")

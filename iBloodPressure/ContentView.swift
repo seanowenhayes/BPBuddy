@@ -1,12 +1,9 @@
 import SwiftData
 import SwiftUI
 
+/// The main starting point
 struct ContentView: View {
     
-    @Observable
-    class ContentModel {
-        var showAddReading = false
-    }
     private let modelContext: ModelContext
     
     @State private var contentModel = ContentModel()
@@ -29,6 +26,13 @@ struct ContentView: View {
 
     init(modelContext: ModelContext) {
         self.modelContext = modelContext
+    }
+}
+
+extension ContentView {
+    @Observable
+    class ContentModel {
+        var showAddReading = false
     }
 }
 
