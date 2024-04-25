@@ -64,7 +64,7 @@ struct ReadingListView: View {
         let modelContext = modelContainer.mainContext
 
         for i in 0 ... 10 {
-            var example = Reading.example
+            let example = Reading.example
             example.diastolic += UInt(i)
             example.systolic += UInt(i)
             modelContext.insert(example)

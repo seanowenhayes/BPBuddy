@@ -45,7 +45,7 @@
 		145639802BCD048A0085AE4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		145639812BCD06010085AE4A /* NHSBloodPressureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHSBloodPressureView.swift; sourceTree = "<group>"; };
 		145639842BCD32B40085AE4A /* NHSBloodPressureViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHSBloodPressureViewViewModel.swift; sourceTree = "<group>"; };
-		1456398A2BCD4FEC0085AE4A /* iBloodPressureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBloodPressureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1456398A2BCD4FEC0085AE4A /* BPBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BPBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		145639942BCD503F0085AE4A /* ReadingIndicatorViewViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingIndicatorViewViewModelTest.swift; sourceTree = "<group>"; };
 		145639972BD0102A0085AE4A /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		145639992BD0108A0085AE4A /* SystolicAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystolicAxisView.swift; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		1490AE1B2BBD8D5200E30797 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		1490AE1D2BBD96A000E30797 /* ReadingListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListItemView.swift; sourceTree = "<group>"; };
 		1490AE1F2BBD993500E30797 /* Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
-		14E909212BB0787000BD13B5 /* iBloodPressure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBloodPressure.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14E909212BB0787000BD13B5 /* BPBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BPBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E909242BB0787000BD13B5 /* iBloodPressureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBloodPressureApp.swift; sourceTree = "<group>"; };
 		14E909262BB0787000BD13B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		14E909282BB0787200BD13B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,14 +95,14 @@
 			path = DataVisualisation;
 			sourceTree = "<group>";
 		};
-		1456398B2BCD4FEC0085AE4A /* iBloodPressureTests */ = {
+		1456398B2BCD4FEC0085AE4A /* BPBuddyTests */ = {
 			isa = PBXGroup;
 			children = (
 				145639A92BD573A10085AE4A /* ReadingList */,
 				145639932BCD50120085AE4A /* DataVisualisation */,
 				145639A32BD185760085AE4A /* ReadingTest.swift */,
 			);
-			path = iBloodPressureTests;
+			path = BPBuddyTests;
 			sourceTree = "<group>";
 		};
 		145639932BCD50120085AE4A /* DataVisualisation */ = {
@@ -148,8 +148,8 @@
 		14E909182BB0787000BD13B5 = {
 			isa = PBXGroup;
 			children = (
-				14E909232BB0787000BD13B5 /* iBloodPressure */,
-				1456398B2BCD4FEC0085AE4A /* iBloodPressureTests */,
+				14E909232BB0787000BD13B5 /* BPBuddy */,
+				1456398B2BCD4FEC0085AE4A /* BPBuddyTests */,
 				14E909222BB0787000BD13B5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -157,13 +157,13 @@
 		14E909222BB0787000BD13B5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14E909212BB0787000BD13B5 /* iBloodPressure.app */,
-				1456398A2BCD4FEC0085AE4A /* iBloodPressureTests.xctest */,
+				14E909212BB0787000BD13B5 /* BPBuddy.app */,
+				1456398A2BCD4FEC0085AE4A /* BPBuddyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		14E909232BB0787000BD13B5 /* iBloodPressure */ = {
+		14E909232BB0787000BD13B5 /* BPBuddy */ = {
 			isa = PBXGroup;
 			children = (
 				145639A62BD5521C0085AE4A /* ReadingList */,
@@ -179,7 +179,7 @@
 				1490AE1F2BBD993500E30797 /* Colours.swift */,
 				145639802BCD048A0085AE4A /* README.md */,
 			);
-			path = iBloodPressure;
+			path = BPBuddy;
 			sourceTree = "<group>";
 		};
 		14E9092A2BB0787200BD13B5 /* Preview Content */ = {
@@ -193,9 +193,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		145639892BCD4FEC0085AE4A /* iBloodPressureTests */ = {
+		145639892BCD4FEC0085AE4A /* BPBuddyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 145639902BCD4FEC0085AE4A /* Build configuration list for PBXNativeTarget "iBloodPressureTests" */;
+			buildConfigurationList = 145639902BCD4FEC0085AE4A /* Build configuration list for PBXNativeTarget "BPBuddyTests" */;
 			buildPhases = (
 				145639862BCD4FEC0085AE4A /* Sources */,
 				145639872BCD4FEC0085AE4A /* Frameworks */,
@@ -206,14 +206,14 @@
 			dependencies = (
 				1456398F2BCD4FEC0085AE4A /* PBXTargetDependency */,
 			);
-			name = iBloodPressureTests;
+			name = BPBuddyTests;
 			productName = iBloodPressureTests;
-			productReference = 1456398A2BCD4FEC0085AE4A /* iBloodPressureTests.xctest */;
+			productReference = 1456398A2BCD4FEC0085AE4A /* BPBuddyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		14E909202BB0787000BD13B5 /* iBloodPressure */ = {
+		14E909202BB0787000BD13B5 /* BPBuddy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14E9092F2BB0787200BD13B5 /* Build configuration list for PBXNativeTarget "iBloodPressure" */;
+			buildConfigurationList = 14E9092F2BB0787200BD13B5 /* Build configuration list for PBXNativeTarget "BPBuddy" */;
 			buildPhases = (
 				14E9091D2BB0787000BD13B5 /* Sources */,
 				14E9091E2BB0787000BD13B5 /* Frameworks */,
@@ -223,9 +223,9 @@
 			);
 			dependencies = (
 			);
-			name = iBloodPressure;
+			name = BPBuddy;
 			productName = iBloodPressure;
-			productReference = 14E909212BB0787000BD13B5 /* iBloodPressure.app */;
+			productReference = 14E909212BB0787000BD13B5 /* BPBuddy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -247,7 +247,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 14E9091C2BB0787000BD13B5 /* Build configuration list for PBXProject "iBloodPressure" */;
+			buildConfigurationList = 14E9091C2BB0787000BD13B5 /* Build configuration list for PBXProject "BPBuddy" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -260,8 +260,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				14E909202BB0787000BD13B5 /* iBloodPressure */,
-				145639892BCD4FEC0085AE4A /* iBloodPressureTests */,
+				14E909202BB0787000BD13B5 /* BPBuddy */,
+				145639892BCD4FEC0085AE4A /* BPBuddyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -325,7 +325,7 @@
 /* Begin PBXTargetDependency section */
 		1456398F2BCD4FEC0085AE4A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 14E909202BB0787000BD13B5 /* iBloodPressure */;
+			target = 14E909202BB0787000BD13B5 /* BPBuddy */;
 			targetProxy = 1456398E2BCD4FEC0085AE4A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -340,12 +340,12 @@
 				DEVELOPMENT_TEAM = F4Y4J7N38V;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = es.seanowenhay.iBloodPressureTests;
+				PRODUCT_BUNDLE_IDENTIFIER = es.seanowenhay.BPBuddyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iBloodPressure.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iBloodPressure";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BPBuddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)BPBuddy";
 			};
 			name = Debug;
 		};
@@ -358,12 +358,12 @@
 				DEVELOPMENT_TEAM = F4Y4J7N38V;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = es.seanowenhay.iBloodPressureTests;
+				PRODUCT_BUNDLE_IDENTIFIER = es.seanowenhay.BPBuddyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iBloodPressure.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iBloodPressure";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BPBuddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)BPBuddy";
 			};
 			name = Release;
 		};
@@ -493,7 +493,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iBloodPressure/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BPBuddy/Preview Content\"";
 				DEVELOPMENT_TEAM = F4Y4J7N38V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -508,7 +508,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = es.seanowenhay.iBloodPressure;
+				PRODUCT_BUNDLE_IDENTIFIER = es.seanowenhay.BPBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -523,7 +523,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iBloodPressure/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BPBuddy/Preview Content\"";
 				DEVELOPMENT_TEAM = F4Y4J7N38V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -538,7 +538,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = es.seanowenhay.iBloodPressure;
+				PRODUCT_BUNDLE_IDENTIFIER = es.seanowenhay.BPBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -549,7 +549,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		145639902BCD4FEC0085AE4A /* Build configuration list for PBXNativeTarget "iBloodPressureTests" */ = {
+		145639902BCD4FEC0085AE4A /* Build configuration list for PBXNativeTarget "BPBuddyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				145639912BCD4FEC0085AE4A /* Debug */,
@@ -558,7 +558,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14E9091C2BB0787000BD13B5 /* Build configuration list for PBXProject "iBloodPressure" */ = {
+		14E9091C2BB0787000BD13B5 /* Build configuration list for PBXProject "BPBuddy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14E9092D2BB0787200BD13B5 /* Debug */,
@@ -567,7 +567,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14E9092F2BB0787200BD13B5 /* Build configuration list for PBXNativeTarget "iBloodPressure" */ = {
+		14E9092F2BB0787200BD13B5 /* Build configuration list for PBXNativeTarget "BPBuddy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14E909302BB0787200BD13B5 /* Debug */,

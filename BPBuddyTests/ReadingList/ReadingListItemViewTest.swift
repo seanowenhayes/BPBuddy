@@ -1,4 +1,4 @@
-@testable import iBloodPressure
+@testable import BPBuddy
 import XCTest
 
 final class ReadingListItemViewTest: XCTestCase {

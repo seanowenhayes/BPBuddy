@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/sean/Dev/seanowenhayes/BPBuddy/BPBuddy.xcodeproj">
    </FileRef>
 </Workspace>

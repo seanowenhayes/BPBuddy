@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "14E909202BB0787000BD13B5"
-               BuildableName = "iBloodPressure.app"
-               BlueprintName = "iBloodPressure"
-               ReferencedContainer = "container:iBloodPressure.xcodeproj">
+               BuildableName = "BPBuddy.app"
+               BlueprintName = "BPBuddy"
+               ReferencedContainer = "container:BPBuddy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -36,9 +36,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "145639892BCD4FEC0085AE4A"
-               BuildableName = "iBloodPressureTests.xctest"
-               BlueprintName = "iBloodPressureTests"
-               ReferencedContainer = "container:iBloodPressure.xcodeproj">
+               BuildableName = "BPBuddyTests.xctest"
+               BlueprintName = "BPBuddyTests"
+               ReferencedContainer = "container:BPBuddy.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -58,9 +58,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14E909202BB0787000BD13B5"
-            BuildableName = "iBloodPressure.app"
-            BlueprintName = "iBloodPressure"
-            ReferencedContainer = "container:iBloodPressure.xcodeproj">
+            BuildableName = "BPBuddy.app"
+            BlueprintName = "BPBuddy"
+            ReferencedContainer = "container:BPBuddy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14E909202BB0787000BD13B5"
-            BuildableName = "iBloodPressure.app"
-            BlueprintName = "iBloodPressure"
-            ReferencedContainer = "container:iBloodPressure.xcodeproj">
+            BuildableName = "BPBuddy.app"
+            BlueprintName = "BPBuddy"
+            ReferencedContainer = "container:BPBuddy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

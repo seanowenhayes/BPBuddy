@@ -1,5 +1,5 @@
 import XCTest
-@testable import iBloodPressure
+@testable import BPBuddy
 
 final class ReadingTest: XCTestCase {
     
