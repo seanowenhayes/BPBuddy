@@ -26,7 +26,7 @@ struct AddReadingView: View {
     }
 
     init(modelContext: ModelContext) {
-        let model = ViewModel(systolic: 105, diastolic: 70, pulse: 80, modelContext: modelContext)
+        let model = ViewModel(modelContext: modelContext)
         _model = State(initialValue: model)
     }
 }

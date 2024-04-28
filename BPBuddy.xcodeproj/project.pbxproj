@@ -137,6 +137,15 @@
 			path = ReadingList;
 			sourceTree = "<group>";
 		};
+		14C6060D2BDEAD5000D2D091 /* AddReading */ = {
+			isa = PBXGroup;
+			children = (
+				14E909342BB0798F00BD13B5 /* AddReadingView.swift */,
+				14E909362BB079AF00BD13B5 /* AddReadingViewViewModel.swift */,
+			);
+			path = AddReading;
+			sourceTree = "<group>";
+		};
 		14E909182BB0787000BD13B5 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +167,7 @@
 		14E909232BB0787000BD13B5 /* BPBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				14C6060D2BDEAD5000D2D091 /* AddReading */,
 				14675FCA2BDCF56B00E20AB0 /* HealthStatusView.swift */,
 				145639A62BD5521C0085AE4A /* ReadingList */,
 				145639832BCD327C0085AE4A /* DataVisualisation */,
@@ -166,8 +176,6 @@
 				14E909282BB0787200BD13B5 /* Assets.xcassets */,
 				14E9092A2BB0787200BD13B5 /* Preview Content */,
 				14E909322BB0788300BD13B5 /* Reading.swift */,
-				14E909342BB0798F00BD13B5 /* AddReadingView.swift */,
-				14E909362BB079AF00BD13B5 /* AddReadingViewViewModel.swift */,
 				1490AE1F2BBD993500E30797 /* Colours.swift */,
 				145639802BCD048A0085AE4A /* README.md */,
 			);
