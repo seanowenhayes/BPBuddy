@@ -18,6 +18,7 @@
 		145639A42BD185760085AE4A /* ReadingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145639A32BD185760085AE4A /* ReadingTest.swift */; };
 		14675FCB2BDCF56B00E20AB0 /* HealthStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14675FCA2BDCF56B00E20AB0 /* HealthStatusView.swift */; };
 		14675FD02BDCFBD800E20AB0 /* HealthStatusViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14675FCF2BDCFBD800E20AB0 /* HealthStatusViewTest.swift */; };
+		14862B382BE29B2C00D98F4F /* FlexNHSBloodPressureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14862B372BE29B2C00D98F4F /* FlexNHSBloodPressureView.swift */; };
 		1490AE1A2BBD729300E30797 /* ReadingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1490AE192BBD729300E30797 /* ReadingListView.swift */; };
 		1490AE1C2BBD8D5200E30797 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1490AE1B2BBD8D5200E30797 /* EmptyView.swift */; };
 		1490AE1E2BBD96A100E30797 /* ReadingListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1490AE1D2BBD96A000E30797 /* ReadingListItemView.swift */; };
@@ -55,6 +56,7 @@
 		145639A32BD185760085AE4A /* ReadingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingTest.swift; sourceTree = "<group>"; };
 		14675FCA2BDCF56B00E20AB0 /* HealthStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStatusView.swift; sourceTree = "<group>"; };
 		14675FCF2BDCFBD800E20AB0 /* HealthStatusViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStatusViewTest.swift; sourceTree = "<group>"; };
+		14862B372BE29B2C00D98F4F /* FlexNHSBloodPressureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexNHSBloodPressureView.swift; sourceTree = "<group>"; };
 		1490AE192BBD729300E30797 /* ReadingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListView.swift; sourceTree = "<group>"; };
 		1490AE1B2BBD8D5200E30797 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		1490AE1D2BBD96A000E30797 /* ReadingListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListItemView.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				1456399B2BD011C10085AE4A /* ReadingIndicatorView.swift */,
 				1456399D2BD022560085AE4A /* DiastolicAxisView.swift */,
 				1456399F2BD023D40085AE4A /* AxisText.swift */,
+				14862B372BE29B2C00D98F4F /* FlexNHSBloodPressureView.swift */,
 			);
 			path = NHS;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				1490AE1C2BBD8D5200E30797 /* EmptyView.swift in Sources */,
 				1490AE202BBD993500E30797 /* Colours.swift in Sources */,
 				1490AE1A2BBD729300E30797 /* ReadingListView.swift in Sources */,
+				14862B382BE29B2C00D98F4F /* FlexNHSBloodPressureView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

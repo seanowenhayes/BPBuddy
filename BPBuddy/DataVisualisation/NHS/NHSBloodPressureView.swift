@@ -24,9 +24,10 @@ struct NHSBloodPressureView: View {
                 .offset(y: 10)
         }
         .padding(.leading, 40)
-        .padding(.trailing, 20)
+            .padding(.trailing, 20)
         .padding(.top, 3)
         .padding(.bottom, 10)
+        .scaledToFill()
     }
 }
 
