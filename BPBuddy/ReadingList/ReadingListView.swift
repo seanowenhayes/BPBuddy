@@ -10,25 +10,25 @@ struct ReadingListView: View {
             if readings.isEmpty == false {
                 List {
                     GeometryReader { geometry in
-                        let aQuarterWidth = geometry.size.width / 4
+                        let width = geometry.size.width
                         HStack {
                             Text("Date")
-                                .frame(width: aQuarterWidth)
+                                .frame(width: width * 0.24)
                                 .fontWeight(.bold)
                             ViewThatFits {
                                 Text("Systolic")
                                 Text("Sys")
                             }
-                                .frame(width: aQuarterWidth)
+                            .frame(width: width * 0.24)
                                 .fontWeight(.bold)
                             ViewThatFits {
                                 Text("Diastolic")
                                 Text("Dia")
                             }
-                                .frame(width: aQuarterWidth)
+                            .frame(width: width * 0.24)
                                 .fontWeight(.bold)
                             Text("Status")
-                                .frame(width: aQuarterWidth)
+                                .frame(width: width * 0.28)
                                 .fontWeight(.bold)
                         }
                     }

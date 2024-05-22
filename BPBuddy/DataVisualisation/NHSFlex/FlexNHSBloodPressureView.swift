@@ -1,43 +1,34 @@
-//
-
 import SwiftUI
 
 struct FlexNHSBloodPressureView: View {
     @State private var graphWidth: Double = 0
     @State private var graphHeight: Double = 0
-    
-    var body: some View {
-        
-        
-        
 
+    var body: some View {
         Grid {
             GridRow {
-                VStack {
+                YAxisLayout(percentAxisPoints: [0.0, 30.0, 50.0, 80.0, 100.0]) {
                     /// YAxis systolic
                     Text("170")
                     Text("135")
-                    Spacer()
                     Text("120")
-                    Spacer()
                     Text("90")
-                    Spacer()
                     Text("70")
+                }
 
-                }.frame(maxHeight: .infinity)
-                    .background(.orange)
                 GeometryReader { geometryProxy in
-                    ZStack {
+                    graphWidth = geometryProxy.size.width
+                    graphHeight = geometryProxy.size.height
+                    return ZStack {
                         /// Main graph display area
                     }
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(.blue)
                 }
-                
             }
             GridRow {
                 Spacer()
-                HStack { /// X-Axis diastolic
+                XAxisLayout(percentAxisPoints: [0.0, 20 / 60 * 100, 40 / 60 * 100, 45 / 60 * 100, 100]) { /// X-Axis diastolic
                     Text("40")
                     Text("60")
                     Text("80")

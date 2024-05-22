@@ -21,6 +21,14 @@ class Reading {
     var timeFormatted: String {
         time.formatted(.dateTime.day(.twoDigits).month(.twoDigits))
     }
+    
+    var systolicFormatted: String {
+        "\(self.systolic)"
+    }
+    
+    var diastolicFormatted: String {
+        "\(self.diastolic)"
+    }
 
     var healthStatus: HealthStatus {
         if systolic > 135 || diastolic > 85 {
