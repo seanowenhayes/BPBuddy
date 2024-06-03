@@ -6,6 +6,7 @@ import SwiftUI
 struct XAxisLayout: Layout {
     
     let percentAxisPoints: [Double]
+    let paddingLeft: Double
 
     /// Give back the max text width as width and take up all height :)
     func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
@@ -15,10 +16,13 @@ struct XAxisLayout: Layout {
     }
 
     func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
+        let width = bounds.size.width
+        let availableWidth = width - 35
         for (index, subview) in subviews.enumerated() {
+
             let pointPlacement = percentAxisPoints[index]
-            let pointX = (pointPlacement / 100.0) * bounds.size.width
-            let point = CGPoint(x: pointX, y: 0)
+            let pointX = (pointPlacement / 100.0) * availableWidth
+            let point = CGPoint(x: pointX, y: bounds.minY)
             subview.place(at: point, anchor: .zero, proposal: .unspecified)
         }
     }
